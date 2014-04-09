@@ -30,7 +30,7 @@
 		        <h1 class="title">Tree LC</h1>
 		     </section>
 			<section class="right-small">
-				<a class="right-off-canvas-toggle menu-icon"><img src="assets/img/phone-icon.png" alt="" /></a>
+				<a class="right-off-canvas-toggle menu-icon"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/phone-icon.png" alt="" /></a>
 			</section>
 		</nav>
 		<!-- Off Canvas Menu -->
@@ -56,8 +56,7 @@
 		<header id="primary-header" class="show-for-medium-up">
 			<div class="row">
 				<div class="small-3 columns">
-					<a href="index.html"><img src="assets/img/tree-lc-logo.png" alt="" id="logo" /></a> 
-
+					<a href="<?php echo get_home_url(); ?>"><img id="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/tree-lc-logo.png" alt="Tree LC" /></a> 
 				</div>
 				<div class="small-9 columns">
 					<nav id="desktop">
