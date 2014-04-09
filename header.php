@@ -19,20 +19,65 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="hfeed site">
 
-	<header id="masthead" class="site-header" role="banner">
-		<div class="site-branding">
-			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-		</div>
+<div class="off-canvas-wrap">
+	<div class="inner-wrap">
+		<nav class="tab-bar show-for-small">
+			<section class="left-small">
+				<a class="left-off-canvas-toggle menu-icon"><span></span></a>
+			</section>
+			<section class="middle tab-bar-section small-text-center">
+		        <h1 class="title">Tree LC</h1>
+		     </section>
+			<section class="right-small">
+				<a class="right-off-canvas-toggle menu-icon"><img src="assets/img/phone-icon.png" alt="" /></a>
+			</section>
+		</nav>
+		<!-- Off Canvas Menu -->
+		<aside class="left-off-canvas-menu">
+			<!-- whatever you want goes here -->
+			<ul class="off-canvas-list">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="services.html">Services</a></li>
+				<li><a href="portfolio.html">Portfolio</a></li>
+				<li><a href="faq.html">FAQ</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</aside>
+		<aside class="right-off-canvas-menu">
+			<ul class="off-canvas-list">
+				<li><a href="#">416.666.5555</a></li>
+				<li><a href="mailto:">info@treelc.ca</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul>
+		</aside>
+		<!-- main content goes here -->
+		<header id="primary-header" class="show-for-medium-up">
+			<div class="row">
+				<div class="small-3 columns">
+					<a href="index.html"><img src="assets/img/tree-lc-logo.png" alt="" id="logo" /></a> 
 
-		<nav id="site-navigation" class="main-navigation" role="navigation">
-			<h1 class="menu-toggle"><?php _e( 'Menu', 'treelc' ); ?></h1>
-			<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'treelc' ); ?></a>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
-
-	<div id="content" class="site-content">
+				</div>
+				<div class="small-9 columns">
+					<nav id="desktop">
+						<ul>
+							<li><a href="about.html">About</a></li>
+							<li><a href="services.html">Services</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		
+		<header id="page-header">
+			<div class="row">
+				<div class="small-12 small-text-center medium-11 large-11 small-centered columns">
+					<p class="lead">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam</p>
+					<a href="about.html" class="button">Learn More</a>
+				</div>
+			</div>
+		</header>
