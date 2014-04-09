@@ -8,16 +8,19 @@
  */
 ?>
 
-	</div><!-- #content -->
+<footer>
+	<div class="row">
+		<div class="small-12 columns">
+			<h2>(416) 666-5555</h2>
+			<p>Copyright 2014 Tree LC. All rights reserved.<br /><a href="">Privacy Policy</a></p>
+		</div>
+	</div>
+</footer>
+<!-- close the off-canvas menu -->
+<a class="exit-off-canvas"></a>
+</div>
+</div>
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'treelc' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'treelc' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
-			<?php printf( __( 'Theme: %1$s by %2$s.', 'treelc' ), 'treelc', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 
