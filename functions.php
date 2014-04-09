@@ -91,6 +91,7 @@ function treelc_scripts() {
 	wp_enqueue_style( 'treelc-vollkorn', 'http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700');
 
 	/* Scripts */
+	wp_enqueue_script( 'treelc-modernizer', get_template_directory_uri() . '/assets/js/jquery.js', array(), true );
 	wp_enqueue_script( 'treelc-modernizer', get_template_directory_uri() . '/assets/js/modernizr.js', array(), true );
 	wp_enqueue_script( 'treelc-foundation', get_template_directory_uri() . '/assets/js/foundation.min.js', array( 'jquery' ), true );
 	wp_enqueue_script( 'treelc-app', get_template_directory_uri() . '/assets/js/app.js', array( 'jquery' ), true );
